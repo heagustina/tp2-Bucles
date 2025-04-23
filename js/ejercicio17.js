@@ -16,12 +16,12 @@ const vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ";
 let encontrada = false;
 for (let i = 0; i < texto.length; i++) {
     if (vocales.includes(texto[i])) {
-        alert(`La vocal '${texto[i]}' está en la posición ${i + 1}`);
+        document.writeln(`La vocal '${texto[i]}' está en la posición ${i + 1}`);
         encontrada = true;
         break;
     }
 }
 
 if (!encontrada) {
-    alert("No se encontró ninguna vocal en el texto.");
+    document.writeln("No se encontró ninguna vocal en el texto.");
 }
