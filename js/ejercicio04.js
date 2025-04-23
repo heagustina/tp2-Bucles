@@ -5,13 +5,13 @@
 let suma = 0;
 
 while (true) {
-  const entrada = prompt("Introduce un número (pulsa Cancelar para salir):");
+  const inicio = prompt("Introduce un número (pulsa Cancelar para salir):");
 
-  if (entrada === null) {
+  if (inicio === null) {
     break;
   }
 
-  const numero = Number(entrada);
+  const numero = Number(inicio);
 
   if (isNaN(numero)) {
     alert("Eso no es un número. Por favor, introduce un número válido.");
